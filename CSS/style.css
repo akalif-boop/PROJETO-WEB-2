@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: rgb(23, 168, 12);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    background: #060404;
+    border-bottom: 2px solid rgb(26, 94, 177);
+
+    padding: 18px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav a {
+    color: rgb(79, 142, 210);
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+.inicio {
+    height: 600px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(rgba(21, 36, 125, 0.533), rgba(121, 75, 205, 0.533)),
+        url("imagens/undertale.jpg") center/cover;
+}
+
+.inicio h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.inicio p {
+    font-size: 22px;
+    max-width: 650px;
+    margin-bottom: 30px;
+}
+
+.botao {
+    display: inline-block;
+
+    background: rgb(36, 162, 230);
+    color: black;
+
+    padding: 15px 25px;
+
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background: #ffcc00;
+}
+
+.secao {
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px 25px;
+}
+
+.secao h2 {
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.historia {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 35px;
+    align-items: center;
+}
+
+.historia img {
+    width: 100%;
+    border: 2px solid rgb(38, 92, 158);
+}
+
+.historia p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+.personagens {
+    background: #080808;
+    max-width: none;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.descricao {
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #1c1c1c;
+    border: 1px solid #555;
+    padding: 20px;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    border-color: rgb(151, 31, 31);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+
+    object-fit: contain;
+
+    background: #000;
+}
+
+.card h3 {
+    font-size: 23px;
+    margin: 15px 0 10px;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+.locais {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.local {
+    background: #0f0707;
+    border-left: 5px solid rgb(150, 41, 41);
+    padding: 25px;
+}
+
+.local h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.local p {
+    line-height: 1.6;
+}
+
+.trailer {
+    text-align: center;
+}
+
+.trailer p {
+    margin-bottom: 25px;
+}
+
+.video {
+    position: relative;
+
+    width: 100%;
+    max-width: 900px;
+
+    margin: auto;
+
+    padding-bottom: 56.25%;
+}
+
+.video iframe {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    left: 0;
+    top: 0;
+
+    border: 2px solid white;
+}
+
+footer {
+    text-align: center;
+
+    background: #000;
+
+    padding: 40px 20px;
+
+    border-top: 2px solid white;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 8px;
+    color: #1ab83a;
+}
+@media (max-width: 800px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+        display: inline-block;
+    }
+
+    .inicio {
+        height: 500px;
+    }
+
+    .inicio h1 {
+        font-size: 45px;
+    }
+
+    .historia {
+        grid-template-columns: 1fr;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .locais {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .inicio h1 {
+        font-size: 38px;
+    }
+
+    .inicio p {
+        font-size: 18px;
+    }
+}
+
