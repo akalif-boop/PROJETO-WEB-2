@@ -16,7 +16,7 @@
 
 .card {
     background: #1c1c1c;
-    border: 1px solid #555;
+    border: 1px solid #2e2c2c;
     padding: 20px;
 
     transition: 0.3s;
@@ -45,3 +45,35 @@
     line-height: 1.6;
 }
 
+p{
+    color:rgb(240, 237, 236)
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    background: #060404;
+    border-bottom: 2px solid rgb(26, 94, 177);
+
+    padding: 18px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a {
+    color: rgb(254, 255, 255);
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff0000;
+}
+
+h3 {
+    color:chartreuse
+}
