@@ -50,6 +50,7 @@ nav a {
     text-decoration: none;
     margin-left: 20px;
     font-weight: bold;
+    transition: color 0.8s ease;
 }
 
 nav a:hover {
