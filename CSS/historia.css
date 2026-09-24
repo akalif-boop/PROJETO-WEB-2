@@ -14,8 +14,13 @@ body {
     color: white;
     line-height: 1.6;
 }
-
-/* Header fornecido */
+#historia{
+    padding-top: 20px;
+    color: #ff0000;
+}
+#p-texto{
+    padding-top: 40px;
+}
 header {
     position: sticky;
     top: 0;
@@ -30,7 +35,10 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-
+#fundo{
+    position: flex;
+    height: 90px;
+}
 .logo {
     font-size: 28px;
     font-weight: bold;
@@ -57,11 +65,22 @@ nav a:hover {
     color: #ff0000;
 }
 
-/* Estilos simples para o resto da página */
 main {
-    max-width: 650px;
+    max-width: 999px;
     margin: 40px auto;
     padding: 0 15px;
+}
+#inicio{
+   display: flex;
+align-items: left ;
+}
+#fundo img{
+    width:400px;
+    align-items: right;
+    display: flex;
+    padding-top: 500px;
+
+    
 }
 
 h2 {
@@ -84,6 +103,7 @@ p {
     padding: 12px;
     margin-bottom: 15px;
     background-color: #111;
+
 }
 
 footer {
